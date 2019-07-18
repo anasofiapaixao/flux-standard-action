@@ -10,7 +10,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "babel src --out-dir lib --copy-files",
-    "prepare": "npm run build",
+    "prepare": "babel src --out-dir lib --copy-files",
     "precommit": "pretty-quick --staged",
     "clean": "rimraf lib/",
     "lint": "xo",
